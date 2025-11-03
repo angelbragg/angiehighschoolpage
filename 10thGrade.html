@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Angie Bragg's Portfolio</title>
+	<meta name="description" content="Portfolio explaining my growth in STEM" />
+	<meta name="keywords" content="DRSS, hompage, growth, STEM" />
+	<meta name="author" content="Angie Bragg" />
+	<meta name="copyright" content="2021, Dayton Regional STEM School" />
+	<meta name="rating" content="general" />
+	<link href="old css/global.css" rel="stylesheet" type="text/css" />
+	<link rel="shortcut icon" href="Images/HeartIcon.jpg" type="image/x-icon" />
+</head>
+<body>
+	<nav>	
+		<div id="DRSSImage"> 
+			<figure> 
+				<img src="Images/HeartIcon.jpg" alt="My Logo" />
+			</figure>
+		</div>
+		<ul>
+			<li><a href="index.html"> Homepage </a> </li>
+			<li><a href="experiences.html"> Experiences </a> </li>
+			<li><a href="codingprog.html"> Coding Progression </a> </li>
+			<li><a href="qualities.html"> 5 Qualities </a> </li>
+			<li><a href="https://www.daytonstemschool.org/"> Dayton Regional STEM School </a> </li>
+			<div id="dropdown">
+				<button id="dropbtn"><a href="projects.html"><li> Projects </li></a></button>
+					<div id="dropdown-content">
+						<li><a href="7thGrade.html"> 7th Grade Page </a> </li>
+						<li><a href="8thGrade.html"> 8th Grade Page </a> </li>
+						<li><a href="9thGrade.html"> 9th Grade Page </a> </li>
+						<li><a href="10thGrade.html"> 10th Grade Page </a> </li>
+						<li><a href="11thGrade.html"> 11th Grade Page </a> </li>
+						<li><a href="12thGrade.html"> 12th Grade Page </a></li>
+					</div>
+			</div>
+		</ul>
+	</nav>
+	<div id="space">
+	</div>
+	<div id="edges">
+		<h1> 10th Grade Page </h1>
+		<article>
+                <h2>Asking For Help</h2>
+				<!-- Slideshow container -->
+					<div class="slideshow-container">
+
+					<!-- Full-width images with number and caption text -->
+					<div class="mySlides fade">
+						<img src="old css/PPTs/Slide1.png" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+						<img src="old css/PPTs/Slide2.png" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+						<img src="old css/PPTs/Slide3.png" style="width:100%">
+					</div>
+					  
+					<div class="mySlides fade">
+						<img src="old css/PPTs/Slide4.png" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+						<img src="old css/PPTs/Slide5.png" style="width:100%">
+					</div>
+					
+					<div class="mySlides fade">
+						<img src="old css/PPTs/Slide6.png" style="width:100%">
+					</div>
+					
+					<div class="mySlides fade">
+						<img src="old css/PPTs/Slide7.png" style="width:100%">
+					</div>
+					
+					<div class="mySlides fade">
+						<img src="old css/PPTs/Slide8.png" style="width:100%">
+					</div>
+					
+					<div class="mySlides fade">
+						<img src="old css/PPTs/Slide9.png" style="width:100%">
+					</div>
+					  <!-- Next and previous buttons -->
+					  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+					<br>
+
+					<!-- The dots/circles -->
+					<div style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span>
+					  <span class="dot" onclick="currentSlide(2)"></span>
+					  <span class="dot" onclick="currentSlide(3)"></span>
+					  <span class="dot" onclick="currentSlide(4)"></span>
+					  <span class="dot" onclick="currentSlide(5)"></span>
+					  <span class="dot" onclick="currentSlide(6)"></span>
+					  <span class="dot" onclick="currentSlide(7)"></span>
+					  <span class="dot" onclick="currentSlide(8)"></span>
+					  <span class="dot" onclick="currentSlide(9)"></span>
+					</div>
+					
+					<script>
+						var slideIndex = 1;
+						showSlides(slideIndex);
+
+						// Next/previous controls
+						function plusSlides(n) {
+						  showSlides(slideIndex += n);
+						}
+
+						// Thumbnail image controls
+						function currentSlide(n) {
+						  showSlides(slideIndex = n);
+						}
+
+						function showSlides(n) {
+						  var i;
+						  var slides = document.getElementsByClassName("mySlides");
+						  var dots = document.getElementsByClassName("dot");
+						  if (n > slides.length) {slideIndex = 1}
+						  if (n < 1) {slideIndex = slides.length}
+						  for (i = 0; i < slides.length; i++) {
+							  slides[i].style.display = "none";
+						  }
+						  for (i = 0; i < dots.length; i++) {
+							  dots[i].className = dots[i].className.replace(" active", "");
+						  }
+						  slides[slideIndex-1].style.display = "block";
+						  dots[slideIndex-1].className += " active";
+						}
+					</script>
+        </article>
+	</div>
+</body>
+</html>	
